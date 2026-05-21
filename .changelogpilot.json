@@ -1,0 +1,48 @@
+{
+  "repo_path": ".",
+  "output_format": "markdown",
+  "tag_prefix": "v",
+  "include_scope": true,
+  "group_by_scope": true,
+  "ai_enabled": false,
+  "ai_model": "glm-5.1",
+  "ai_api_key": "",
+  "verbose": false,
+  "output_dir": ".",
+  "changelog_file": "CHANGELOG.md",
+  "conventional_commits": true,
+  "breaking_change_indicators": [
+    "BREAKING CHANGE",
+    "breaking",
+    "!:"
+  ],
+  "commit_types": {
+    "feat": {"title": "Features", "description": "New features"},
+    "fix": {"title": "Bug Fixes", "description": "Bug fixes"},
+    "docs": {"title": "Documentation", "description": "Documentation changes"},
+    "style": {"title": "Styles", "description": "Code style changes"},
+    "refactor": {"title": "Code Refactoring", "description": "Code refactoring"},
+    "perf": {"title": "Performance Improvements", "description": "Performance improvements"},
+    "test": {"title": "Tests", "description": "Test updates"},
+    "build": {"title": "Builds", "description": "Build system changes"},
+    "ci": {"title": "Continuous Integration", "description": "CI/CD changes"},
+    "chore": {"title": "Maintenance", "description": "Maintenance tasks"}
+  },
+  "api_patterns": [
+    "api.*\\.py$",
+    "routes?.*\\.py$",
+    "endpoints?.*\\.py$",
+    "views?.*\\.py$",
+    "controllers?.*\\.py$",
+    "models?.*\\.py$",
+    "schemas?.*\\.py$"
+  ],
+  "ignore_patterns": [
+    "**/test*/**",
+    "**/tests/**",
+    "**/__pycache__/**",
+    "**/node_modules/**",
+    "**/.venv/**",
+    "**/venv/**"
+  ]
+}
